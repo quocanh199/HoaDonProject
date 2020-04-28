@@ -5,15 +5,23 @@
 #include <iostream>
 using namespace std;
 
+HoaDon::HoaDon(){
+    SoHoaDon = 0;
+    TenKhachHang = "";
+    NgayRaHoaDon.setDate();
+}
 HoaDon::HoaDon(int SoHoaDon, string TenKhachHang, Date NgayRaHoaDon) {
     this->SoHoaDon = SoHoaDon;
     this->TenKhachHang = TenKhachHang;
     this->NgayRaHoaDon = NgayRaHoaDon;
 }
+HoaDon::~HoaDon() {
+}
 ostream& operator <<(ostream &out,HoaDon b){
     out<<"Hoa don: "<<b.SoHoaDon<<"\n"
         <<"Ten Khach Hang: "<<b.TenKhachHang<<"\n"
-        <<"Ngay ra hoa don: "<<b.NgayRaHoaDon.asString()<<endl;
+        <<"Ngay ra hoa don: "<<b.NgayRaHoaDon.asString()<<"\n"
+        <<"Thanh tien: "<<b.ThanhTien()<<endl;
     return out;
 }
 istream& operator >>(istream &in,HoaDon &b){

@@ -13,6 +13,7 @@ private:
     float kwTieuThu,DonGia;
     bool LoaiKhachHang;  /*false: ho gia dinh/ true: doanh nghiep */
 public:
+    HoaDonDien();
     HoaDonDien(int SoHoaDon, string TenKhachHang, Date NgayRaHoaDon, float kwTieuThu, float DonGia, bool LoaiKhachHang);
     float ThanhTien();
 };

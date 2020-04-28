@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include "hoadondien.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    HoaDonDien a;
+    cin>>a;
+    cout<<a;
 }

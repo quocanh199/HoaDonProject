@@ -14,6 +14,8 @@ private:
     Date NgayRaHoaDon;
     string TenKhachHang;
 public:
+    ~HoaDon();
+    HoaDon();
     HoaDon(int SoHoaDon, string TenKhachHang,Date NgayRaHoaDon);
     virtual float ThanhTien() ;
     friend ostream&operator <<(ostream &os,HoaDon b);
