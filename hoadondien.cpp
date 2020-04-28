@@ -6,7 +6,7 @@
 using namespace std;
 
 HoaDonDien::HoaDonDien(int SoHoaDon, string TenKhachHang, Date NgayRaHoaDon, float kwTieuThu, float DonGia,
-                       bool LoaiKhachHang):HoaDon(int SoHoaDon, string TenKhachHang, Date NgayRaHoaDon) {
+                       bool LoaiKhachHang):HoaDon(SoHoaDon, TenKhachHang, NgayRaHoaDon) {
     this->kwTieuThu = kwTieuThu;
     this->DonGia = DonGia;
     this->LoaiKhachHang = LoaiKhachHang;
